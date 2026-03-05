@@ -1,39 +1,48 @@
-# Update Form-Data — Read Spreadsheet and Submit via POSTMAN
+# Update Form-Data — Spreadsheet-Driven API Automation with Postman  
 
-A small example project demonstrating how to read rows from a spreadsheet (CSV or XLSX) and use those rows to build multipart/form-data requests that can be sent from Postman to update an API. Includes sample scripts (Node.js and Python), mapping guidance, and Postman workflow notes to help automate spreadsheet-driven API updates.
+A demonstration project showing how to update API form-data directly from a spreadsheet (CSV/XLSX) **without requiring record IDs**. This approach leverages Postman, Node.js, and Python to automate data-driven API updates, making it ideal for QA engineers and backend developers who want to streamline workflows and reduce manual effort.  
 
 ---
 
-## Contents
+## 📑 Contents  
 - [Description](#description)  
+- [Key Advantages](#key-advantages)  
 - [Features](#features)  
 - [Prerequisites](#prerequisites)  
 - [Quickstart — Node.js](#quickstart---nodejs)  
 - [Quickstart — Python](#quickstart---python)  
-- [Postman usage](#postman-usage)  
-- [Example mapping](#example-mapping)  
-- [Troubleshooting & tips](#troubleshooting--tips)  
+- [Postman Usage](#postman-usage)  
+- [Example Mapping](#example-mapping)  
+- [Troubleshooting & Tips](#troubleshooting--tips)  
 - [Contributing](#contributing)  
-- [License](#license)
+- [License](#license)  
 
 ---
 
-## Description
-This repo shows how to:
-- extract rows from a spreadsheet (CSV or XLSX),
-- map spreadsheet columns to form-data fields,
-- construct multipart/form-data requests (including files/binaries),
-- and send those requests via Postman or programmatically to update a target API endpoint.
+## 📖 Description  
+This repo illustrates how to:  
+- Read rows from a spreadsheet (CSV/XLSX).  
+- Map spreadsheet columns directly to form-data fields.  
+- Construct multipart/form-data requests (including file uploads).  
+- Submit requests via Postman or programmatically to update API endpoints.  
 
-Intended as a reference for backend developers, QA engineers, and anyone automating API calls using spreadsheet data.
+**Unique focus:** Updates can be performed **without knowing record IDs in advance** — the spreadsheet itself drives the mapping and payload construction.  
 
 ---
 
-## Features
-- Node.js and Python example scripts to read spreadsheets and prepare form-data payloads
-- Guidance for building Postman requests and using the Postman Runner with data files
-- File upload handling (local file paths -> multipart file fields)
-- Minimal, easy-to-adapt code to match your API schema
+## 🚀 Key Advantages  
+- **Record-ID Independence:** Automates updates without requiring explicit record identifiers.  
+- **Data-Driven Testing:** Ideal for QA workflows where test data lives in spreadsheets.  
+- **Scalable Automation:** Run bulk updates across hundreds of rows with minimal effort.  
+- **CI/CD Ready:** Scripts can be integrated into pipelines for regression and release validation.  
+
+---
+
+## 🔧 Features  
+- Node.js and Python scripts for reading spreadsheets and building payloads.  
+- Postman collection guidance with Runner integration for bulk execution.  
+- File upload handling (local paths → multipart fields).  
+- Minimal, adaptable code for any API schema.  
 
 ---
 
